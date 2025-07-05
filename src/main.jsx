@@ -11,36 +11,39 @@ import AddBook from "./components/AddBook.jsx";
 import { Provider } from "react-redux";
 import { store } from "./utils/store.js";
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/browsebooks/:category",
-        element: <BrowseBooks />,
-      },
+const appRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "browsebooks/:category",
+          element: <BrowseBooks />,
+        },
 
-      {
-        path: "/browsebooks", // add this separately
-        element: <BrowseBooks />,
-      },
-      {
-        path: "/book/:id",
-        element: <BookDetails />,
-      },
-      {
-        path: "/add-book",
-        element: <AddBook />,
-      },
-    ],
-    errorElement: <Error />,
-  },
-]);
+        {
+          path: "browsebooks", // add this separately
+          element: <BrowseBooks />,
+        },
+        {
+          path: "book/:id",
+          element: <BookDetails />,
+        },
+        {
+          path: "add-book",
+          element: <AddBook />,
+        },
+      ],
+      errorElement: <Error />,
+    },
+  ],
+  { basename: "/online-library-system" }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
