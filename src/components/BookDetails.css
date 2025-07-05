@@ -1,0 +1,55 @@
+.book-details-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.book-details-container h1 {
+  font-size: 2.2rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.book-cover {
+  width: 30%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.book-meta {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #334155;
+  padding: 0 1rem;
+}
+
+.book-meta strong {
+  color: #1e40af;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  color: #dc2626;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  border-color: #f59e0b;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #f59e0b;
+  color: aliceblue;
+}

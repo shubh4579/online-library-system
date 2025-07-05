@@ -1,0 +1,29 @@
+.main-header {
+  background-color: rgb(11, 65, 106);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
